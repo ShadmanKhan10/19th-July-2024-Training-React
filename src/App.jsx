@@ -1,7 +1,12 @@
 function App() {
+  const names = ["shad", "sami", "faisal"];
   return (
     <>
-      <h1>Hello world</h1>
+      <ul>
+        {names.map((name, index) => (
+          <li key={index}>{name}</li>
+        ))}
+      </ul>
     </>
   );
 }
